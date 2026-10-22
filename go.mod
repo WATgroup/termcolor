@@ -1,4 +1,4 @@
-module github.com/WATgroup/color
+module github.com/WATgroup/termcolor
 
 go 1.25
 

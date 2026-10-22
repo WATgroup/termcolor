@@ -84,7 +84,7 @@ func EnableColor() (d bool) {
 // Unset resets terminal state ("ESC[0m")
 func Unset() {
 	// Should be called "Reset"... but conflicts with the ESC-reset name
-	fmt.Fprint(stdOut, "%s[%dm", escape, Reset)
+	fmt.Fprintf(stdOut, "%s[%dm", escape, Reset)
 }
 
 // Add includes new attributes into the color definition
